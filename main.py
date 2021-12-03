@@ -29,7 +29,7 @@ class Point:
 
 def addColor(colorName, BGR, minHSV, maxHSV, COLORS):
     newColor = Color(colorName, BGR, minHSV, maxHSV)
-    COLORS.add(newColor)
+    COLORS.append(newColor)
 
 def getContours(img):
     contours, hierarchy = cv2.findContours(img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
